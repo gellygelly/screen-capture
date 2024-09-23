@@ -1,6 +1,6 @@
 av==12.3.0
 opencv-python==4.10.0.84
 pandas==2.2.2
-Pillow==9.4.0
+Pillow
 streamlit==1.38.0
 streamlit-webrtc==0.47.7
