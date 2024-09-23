@@ -160,7 +160,7 @@ def main():
 
     ## Main Page
     st.title("Screen Capture For YOLOv9 Labeling")
-    st.write(os.getcwd())
+    st.write(os.path.abspath('.'))
     st.write(os.listdir(os.getcwd()))
 
     st.header('1. 동영상 녹화', divider='orange')
