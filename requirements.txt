@@ -4,3 +4,7 @@ pandas==2.2.2
 Pillow
 streamlit==1.38.0
 streamlit-webrtc==0.47.7
+apt update
+apt install -y curl
+apt install -y libgl1-mesa-glx
+apt install -y libglib2.0-0
