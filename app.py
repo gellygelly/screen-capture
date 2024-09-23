@@ -160,6 +160,7 @@ def main():
 
     ## Main Page
     st.title("Screen Capture For YOLOv9 Labeling")
+    st.write(os.getcwd())
     st.header('1. 동영상 녹화', divider='orange')
     st.write('**사용법**')
     st.write('1. "START" 버튼을 클릭하여 카메라 화면이 정상적으로 잘 나오는지 확인해 주세요.')
