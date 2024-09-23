@@ -160,9 +160,6 @@ def main():
 
     ## Main Page
     st.title("Screen Capture For YOLOv9 Labeling")
-    st.write(os.path.abspath('.'))
-    st.write(os.listdir('/mount/src/screen-capture/StreamlitRec/videos/20240923/'))
-    st.write(os.listdir('../../../'))
 
     st.header('1. 동영상 녹화', divider='orange')
     st.write('**사용법**')
@@ -185,8 +182,8 @@ def main():
         mode=WebRtcMode.SENDRECV,
         video_frame_callback=video_frame_callback,
         on_video_ended=on_video_ended_callback,
-        sendback_audio=False,)
-        # async_processing=True,)
+        sendback_audio=False,
+        async_processing=True,)
 
     st.divider()
 
