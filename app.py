@@ -8,8 +8,8 @@ from PIL import Image
 import pandas as pd
 
 # 전역 변수
-VIDEO_DIR = 'C:/StreamlitRec/videos/'
-IMAGE_DIR = 'C:/StreamlitRec/images/'
+VIDEO_DIR = 'StreamlitRec/videos/'
+IMAGE_DIR = 'StreamlitRec/images/'
 
 is_recording = False
 frames = []
