@@ -175,14 +175,14 @@ def main():
     # video stream
     webrtc_ctx = webrtc_streamer(
         key="livecam",
-        rtc_configuration={  
+        rtc_configuration={
         "iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}]
         },
         mode=WebRtcMode.SENDRECV,
         video_frame_callback=video_frame_callback,
         on_video_ended=on_video_ended_callback,
-        sendback_audio=False,
-        async_processing=True,)
+        sendback_audio=False,)
+        # async_processing=True,)
 
     st.divider()
 
