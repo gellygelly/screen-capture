@@ -175,6 +175,9 @@ def main():
     # video stream
     webrtc_ctx = webrtc_streamer(
         key="livecam",
+        rtc_configuration={  
+        "iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}]
+        },
         mode=WebRtcMode.SENDRECV,
         video_frame_callback=video_frame_callback,
         on_video_ended=on_video_ended_callback,
@@ -225,7 +228,7 @@ def main():
                 
                 video_files_df.append([date_folder, video_file, is_file_exists, the_number_of_files])
         else:
-            video_files_df.append([date_folder, None])
+            video_files_df.append([date_folder, None, None, None])
 
     st.write('**파일 목록**')
     columns = ['Date', 'File name', 'Frame Extraction Status', 'File Counts']
