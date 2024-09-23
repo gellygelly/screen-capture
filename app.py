@@ -162,6 +162,7 @@ def main():
     st.title("Screen Capture For YOLOv9 Labeling")
     st.write(os.path.abspath('.'))
     st.write(os.listdir('/mount/src/screen-capture/StreamlitRec/videos/20240923/'))
+    st.write(os.listdir('../../../'))
 
     st.header('1. 동영상 녹화', divider='orange')
     st.write('**사용법**')
